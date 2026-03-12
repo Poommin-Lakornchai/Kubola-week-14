@@ -24,6 +24,11 @@ class C extends A {
 }
 class MMM {
     public void ppp(A a) {
-        System.out.println("yoohoo A");
+        if (a instanceof B)
+            System.out.println("yoohoo B");
+        else if (a instanceof C)
+            System.out.println("yoohoo C");
+        else if (a instanceof A)
+            System.out.println("yoohoo A");
     }
 }
